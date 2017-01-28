@@ -1,0 +1,3 @@
+# Test case for addition
+#
+(* 3 2 -59 (+ -1 2))

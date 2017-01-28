@@ -1,0 +1,345 @@
+45
+28
+58
+86
+14
+24
+13
+46
+constructor 8
+noncontiguous 8
+time 0ms: Process A arrived (requires 45 frames)
+45 A
+dddidi  0  45 A
+0
+255
+45
+time 0ms: Placed process A:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAA...................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+time 0ms: Process B arrived (requires 28 frames)
+28 B
+dddidi  0  28 B
+45
+255
+28
+time 0ms: Placed process B:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAABBBBBBBBBBBBBBBBBBB
+BBBBBBBBB.......................
+................................
+................................
+................................
+................................
+................................
+================================
+time 0ms: Process C arrived (requires 58 frames)
+58 C
+dddidi  0  58 C
+73
+255
+58
+time 0ms: Placed process C:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAABBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCC.............................
+................................
+................................
+................................
+================================
+time 0ms: Process D arrived (requires 86 frames)
+86 D
+dddidi  0  86 D
+131
+255
+86
+time 0ms: Placed process D:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAABBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDD.......
+................................
+================================
+time 0ms: Process E arrived (requires 14 frames)
+14 E
+dddidi  0  14 E
+217
+255
+14
+time 0ms: Placed process E:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAABBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEE.........................
+================================
+time 100ms: Process F arrived (requires 24 frames)
+24 F
+dddidi  0  24 F
+231
+255
+24
+time 100ms: Placed process F:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAABBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEEFFFFFFFFFFFFFFFFFFFFFFFF.
+================================
+push_back one in restA
+dd3 45
+time 350ms: Process A removed
+================================
+................................
+.............BBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEEFFFFFFFFFFFFFFFFFFFFFFFF.
+================================
+time 400ms: Process A arrived (requires 45 frames)
+45 A
+dddidi  0  45 A
+0
+45
+45
+time 400ms: Placed process A:
+================================
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAABBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEEFFFFFFFFFFFFFFFFFFFFFFFF.
+================================
+time 435ms: Process G arrived (requires 13 frames)
+13 G
+time 435ms: Cannot place process G -- skipped!
+dd3 45
+time 450ms: Process A removed
+================================
+................................
+.............BBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEEFFFFFFFFFFFFFFFFFFFFFFFF.
+================================
+push_back one in restF
+dd3 24
+time 480ms: Process F removed
+================================
+................................
+.............BBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEE.........................
+================================
+time 500ms: Process F arrived (requires 24 frames)
+24 F
+dddidi  0  24 F
+0
+45
+24
+time 500ms: Placed process F:
+================================
+FFFFFFFFFFFFFFFFFFFFFFFF........
+.............BBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEE.........................
+================================
+time 550ms: Process J arrived (requires 46 frames)
+46 J
+dddidi  0  46 J
+24
+45
+231
+255
+-1
+255
+46
+time 550ms: Placed process J:
+================================
+FFFFFFFFFFFFFFFFFFFFFFFFJJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEE
+EEEEEEEJJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+push_back one in restD
+dd3 86
+time 650ms: Process D removed
+================================
+FFFFFFFFFFFFFFFFFFFFFFFFJJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCC.............................
+................................
+.........................EEEEEEE
+EEEEEEEJJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+push_back one in restC
+dd3 58
+time 950ms: Process C removed
+================================
+FFFFFFFFFFFFFFFFFFFFFFFFJJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBB.......................
+................................
+................................
+................................
+.........................EEEEEEE
+EEEEEEEJJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+dd3 24
+time 975ms: Process F removed
+================================
+........................JJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBB.......................
+................................
+................................
+................................
+.........................EEEEEEE
+EEEEEEEJJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+time 1100ms: Process C arrived (requires 58 frames)
+58 C
+dddidi  0  58 C
+0
+24
+73
+217
+58
+time 1100ms: Placed process C:
+================================
+CCCCCCCCCCCCCCCCCCCCCCCCJJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCC.....................
+................................
+................................
+.........................EEEEEEE
+EEEEEEEJJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+dd3 58
+time 1200ms: Process C removed
+================================
+........................JJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBB.......................
+................................
+................................
+................................
+.........................EEEEEEE
+EEEEEEEJJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+time 1350ms: Process D arrived (requires 86 frames)
+86 D
+dddidi  0  86 D
+0
+24
+73
+217
+86
+time 1350ms: Placed process D:
+================================
+DDDDDDDDDDDDDDDDDDDDDDDDJJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDD.........................
+................................
+.........................EEEEEEE
+EEEEEEEJJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+dd3 14
+time 1400ms: Process E removed
+================================
+DDDDDDDDDDDDDDDDDDDDDDDDJJJJJJJJ
+JJJJJJJJJJJJJBBBBBBBBBBBBBBBBBBB
+BBBBBBBBBDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDD.........................
+................................
+................................
+.......JJJJJJJJJJJJJJJJJJJJJJJJ.
+================================
+dd3 46
+time 1450ms: Process J removed
+================================
+DDDDDDDDDDDDDDDDDDDDDDDD........
+.............BBBBBBBBBBBBBBBBBBB
+BBBBBBBBBDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDD.........................
+................................
+................................
+................................
+================================
+dd3 86
+time 1800ms: Process D removed
+================================
+................................
+.............BBBBBBBBBBBBBBBBBBB
+BBBBBBBBB.......................
+................................
+................................
+................................
+................................
+................................
+================================
+dd3 28
+time 2650ms: Process B removed
+================================
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+................................
+================================
+0 3314649325744685056 8
